@@ -17,3 +17,13 @@ print re
 print(re)
 '''check number of items '''
 print(" Here is the lengths ++++= "+ str( len(re)) +' items' )
+
+'''
+my objective -- count number of books with two star rating  --- 
+things to note:
+    => The main class for every book item is "product_pod"
+    the class for books with two rating is star-rating Two
+'''
+
+for item in re:
+    
