@@ -1,0 +1,19 @@
+import requests
+import bs4
+#get the title of each book with two star rating 
+base_url="https://books.toscrape.com/catalogue/page-{}.html"
+#request
+results=requests.get(base_url.format(1))
+'''
+turn request into a soap
+'''
+soup=bs4.BeautifulSoup(results.text, 'lxml')
+'''select class .product_pod
+ '''
+re=soup.select('.product_pod')
+'''
+print re
+'''
+print(re)
+'''check number of items '''
+print(" Here is the lengths ++++= "+ str( len(re)) +' items' )
