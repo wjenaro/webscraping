@@ -38,5 +38,4 @@ for n in range(0,51):
 
 st=""
 for titles in booktitles:
-        st += titles
-print(st)
+        print(titles)
