@@ -1,0 +1,60 @@
+Vehicle: Car 2002 Red
+Price: KSh 500,000
+--------------------------------------------------
+Vehicle: Toyota Corolla 1988 White
+Price: KSh 265,000
+--------------------------------------------------
+Vehicle: Honda Civic 2001 White
+Price: KSh 315,000
+--------------------------------------------------
+Vehicle: Peugeot 504 1980 Brown
+Price: KSh 215,000
+--------------------------------------------------
+Vehicle: Suzuki Every Wagon 2012 White
+Price: KSh 380,000
+--------------------------------------------------
+Vehicle: Toyota Corsa 1999 White
+Price: KSh 350,000
+--------------------------------------------------
+Vehicle: Mercedes-Benz C180 1996 Blue
+Price: KSh 450,000
+--------------------------------------------------
+Vehicle: Toyota Corolla Hatchback 2001 White
+Price: KSh 299,000
+--------------------------------------------------
+Vehicle: Toyota Corolla 1991 White
+Price: KSh 258,750
+--------------------------------------------------
+Vehicle: Daihatsu Boon 2004 White
+Price: KSh 350,000
+--------------------------------------------------
+Vehicle: Nissan Pick-Up 1997 White
+Price: KSh 380,000
+--------------------------------------------------
+Vehicle: Toyota Corolla 1995 White
+Price: KSh 190,000
+--------------------------------------------------
+Vehicle: Land Rover Defender 1989 Green
+Price: KSh 280,000
+--------------------------------------------------
+Vehicle: Nissan Hardbody 1992 Blue
+Price: KSh 480,000
+--------------------------------------------------
+Vehicle: BMW 518i 1995 Blue
+Price: KSh 500,000
+--------------------------------------------------
+Vehicle: Mitsubishi Lancer 1997 White
+Price: KSh 367,500
+--------------------------------------------------
+Vehicle: Volkswagen Polo 2000 Green
+Price: KSh 260,000
+--------------------------------------------------
+Vehicle: Suzuki Maruti Omni 2010 White
+Price: KSh 450,000
+--------------------------------------------------
+Vehicle: Nissan Pick-Up 2.5D 1998 White
+Price: KSh 440,000
+--------------------------------------------------
+Vehicle: Volkswagen Golf GL 1996 Red
+Price: KSh 155,000
+--------------------------------------------------
