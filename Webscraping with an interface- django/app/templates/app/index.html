@@ -19,8 +19,8 @@
         background-color: #fff;
         border-radius: 10px;
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-        padding: 20px;
-        width: 400px;
+        padding: 10px;
+        width: 70%;
     }
     
     .form-row {
@@ -37,8 +37,8 @@
     .form-input,
     .form-select {
         flex: 2;
-        padding: 6px;
-        border: 1px solid #ccc;
+        padding: 3px;
+        border: 1px solid #18fa04;
         border-radius: 4px;
     }
     
@@ -54,8 +54,8 @@
     border: 2px solid #00ff00;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 400px;
-    height: 300px;
+    width: 100%;
+    height:auto;    
     overflow: auto;
     line-height: 1.4;
 }
@@ -70,49 +70,34 @@
 /* Style for the command output */
 .results p {
     margin: 0;
-    padding-left: 10px;
+    padding: 10px;
 }
 </style>
 </head>
 <body>
     <div class="form-container">
-        <form>
+        <h4 style="text-decoration: wavy; text-align: center; color: #18fa04;">Car Information </h4>
+        <form method="POST" action="{% url 'home' %}">
+            {% csrf_token %}
             <div class="form-row">
                 <label class="form-label" for="url">URL:</label>
                 <input class="form-input" type="text" id="url" name="url" required>
             </div>
             <div class="form-row">
-                <label class="form-label" for="domType">domType:</label>
-                <select class="form-select" id="domType" name="domType">
-                    <option value="html">html</option>
-                    <option value="head">head</option>
-                    <option value="title">title</option>
-                    <option value="meta">meta</option>
-                    <option value="link">link</option>
-                    <option value="script">script</option>
-                    <option value="style">style</option>
-                    <option value="body">body</option>
-                    <option value="header">header</option>
-                    <option value="nav">nav</option>
-                    <option value="main">main</option>
-                    <option value="article">article</option>
-                    <option value="section">section</option>
-                    <option value="aside">aside</option>
-                    <option value="footer">footer</option>
-                    <option value="h1">h1</option>
-                    <option value="h2">h2</option>
-                    <option value="h3">h3</option>
-                    <option value="h4">h4</option>
-                    <option value="h5">h5</option>
-                    <option value="h6">h6</option>
-                    <option value="p">p</option>
-                    <option value="a">a</option>
-                    <option value="img">img</option>
-                    <option value="ul">ul</option>
-                    <option value="li">li</option>
-                </select>
+                <p>Car Name/Model</p>
+                <label class="form-label" for="domType">HTML tag:</label>
+                <input class="form-input" type="text" id="domType" name="domType" required>
+                
                 <label class="form-label" for="class">Class:</label>
                 <input class="form-input" type="text" id="class" name="class">
+            </div>
+            <div class="form-row">
+                <p>Price</p>
+                <label class="form-label" for="domType">HTML tag:</label>
+                <input class="form-input" type="text" id="domType" name="pdomType" required>
+                
+                <label class="form-label" for="class">Class:</label>
+                <input class="form-input" type="text" id="class" name="pclass">
             </div>
             <div class="form-submit">
                 <input type="submit" value="🌤️Scrap!🌎">
@@ -120,9 +105,24 @@
         </form>
         <div>
             <h6>Results</h6>
-            <div class="results"> hhdhdh
-                <p>jjd</p>
-                <p>shdj</p>
+            <div class="results">
+                {% if url %}
+                <!--results -->
+                              
+                <!--Formated-->
+                {% for name_element, price_element in myzip %}
+                <p><span style="color: white;">{{ name_element }} </span><span style="color: blue;">Cost =></span><span>{{ price_element }}</span> </p>
+                                <hr>
+            {% endfor %}
+            
+
+
+
+
+                {% endif %}
+                {% if msg %}
+                <p>{{ msg }}</p>
+                {% endif %}
             </div>
         </div>
     </div>
